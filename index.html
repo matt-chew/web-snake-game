@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .player1 {
+            position: absolute;
+            top: 0px;
+            left: 60px;
+        }
+
+        .player2 {
+            position: absolute;
+            top: 80px;
+            left: 60px;
+        }
+
+        .rules {
+            position: absolute;
+            top: 280px;
+            left: 60px;
+            font-size: 15px;
+            /* Change the size of the font */
+            font-family: 'Arial', sans-serif;
+            /* Change the font family */
+            color: #333;
+            /* Optional: Change the font color */
+            line-height: 1.6;
+            /* Optional: Adjust line spacing for readability */
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="gameCanvas" width="1000" height="1000"></canvas>
+
+    <h1 class="player1"><span id="Score">0</span></h1>
+    <h1 class="player2"><span id="ScoreP2">0</span></h1>
+    <script src="script.js"></script>
+
+    <div class="rules">
+        <div>- First Player to get to 100 Wins</div>
+        <div>- The Game Gets Faster after the comined score reaches increments of 10</div>
+        <div>- Arena Changes after the combined score reaches increments of 20</div>
+
+    </div>
+
+</body>
+
+</html>
